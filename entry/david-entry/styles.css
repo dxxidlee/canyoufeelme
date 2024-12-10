@@ -113,11 +113,11 @@ html, body {
     font-size: 15px;
 }
 
-.text1 { top: 8%; left: 20%; }
-.text2 { top: 100%; left: 45%; }
-.text3 { top: 55%; left: 5%; }
-.text4 { top: 70%; left: 60%; }
-.text5 { top: 30%; left: 90%; }
+.text1 { top: 8%; left: 8%; }
+.text2 { top: 5%; left: 80%; }
+.text3 { top: 55%; left: -2.5%; }
+.text4 { top: 70%; left: 55%; }
+.text5 { top: 35%; left: 30%; }
 .text1:hover { transform: scale(1.05); }
 .text2:hover { transform: scale(1.05); }
 .text3:hover { transform: scale(1.05); }

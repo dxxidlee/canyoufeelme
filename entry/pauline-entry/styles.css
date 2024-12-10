@@ -89,7 +89,7 @@ html, body {
     width: 90vw;
     height: auto;
     z-index: 2;
-    margin: -10em auto;
+    margin: -14em 14em;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -113,11 +113,11 @@ html, body {
     font-size: 15px;
 }
 
-.text1 { top: 8%; left: 20%; }
+.text1 { top: 8%; left: 10%; }
 .text2 { top: 100%; left: 45%; }
-.text3 { top: 55%; left: 5%; }
+.text3 { top: 65%; left: 15%; }
 .text4 { top: 70%; left: 60%; }
-.text5 { top: 30%; left: 90%; }
+.text5 { top: 30%; left: 25%; }
 .text1:hover { transform: scale(1.05); }
 .text2:hover { transform: scale(1.05); }
 .text3:hover { transform: scale(1.05); }
