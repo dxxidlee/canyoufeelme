@@ -1,0 +1,35 @@
+.marquee-text {
+    overflow: hidden;
+    background-color: blue;
+    font-family: sans-serif;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -1542px;
+    height: 30px;
+}
+
+.marquee-text-track {
+    display: flex;
+    padding-left: 4.8rem;
+    gap: 4.8rem;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    width: max-content;
+    animation: marquee-move-text var(--speed, 10s) linear infinite var(--direction, forwards);
+    animation-play-state: running; 
+}
+
+.marquee-text:hover .marquee-text-track {
+    animation-play-state: paused; 
+}
+
+@keyframes marquee-move-text {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+body {
+    background-color: black;
+}

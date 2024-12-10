@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: -0.05em;
+}
+
+html, body {
+    background-color: blue;
+    color: white;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    display: block;
+    padding: 1rem;
+}
+
+.text {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-left: 30px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: clamp(15px, 4vw, 35px);
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-weight: 200;
+    padding: 1rem;
+    transition: margin-left 0.3s ease;
+}
+
+.text p {
+    margin-bottom: 2.5rem;
+    text-align: left;
+    text-justify: inter-word;
+    line-height: 1.8;
+    widows: 2;
+    orphans: 4;
+}
+
+.underline {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.underline:hover {
+    color: #FAF9F6;
+    text-decoration: none;
+}
+
+.marquee-text {
+    overflow: hidden;
+    background-color: blue;
+    font-family: sans-serif;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 0;
+    left: calc(17.5px - 100vh);
+    width: 200vh;
+    height: 35px;
+    z-index: 5000;
+}
+
+.marquee-text-track {
+    display: flex;
+    padding-left: 4.8rem;
+    gap: 4.8rem;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    width: max-content;
+    animation: marquee-move-text var(--speed, 30s) linear infinite var(--direction, forwards);
+    animation-play-state: running;
+    opacity: 100%;
+}
+
+.marquee-text:hover .marquee-text-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-move-text {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-text-track span {
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .text {
+        margin-left: 50px;
+    }
+}
