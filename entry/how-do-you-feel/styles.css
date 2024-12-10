@@ -77,3 +77,8 @@ header h1{
 .marquee-text-track span {
     opacity: 1 !important;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+} 

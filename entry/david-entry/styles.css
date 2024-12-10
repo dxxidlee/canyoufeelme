@@ -89,7 +89,8 @@ html, body {
     width: 90vw;
     height: auto;
     z-index: 2;
-    margin-left: 50px;
+    margin: -10em auto;
+    transition: transform 0.2s ease-in-out;
 }
 
 .information {
@@ -109,13 +110,14 @@ html, body {
     color: blue; 
     white-space: nowrap;
     z-index: 1000;
+    font-size: 15px;
 }
 
-.text1 { top: 100px; left: 220px; }
-.text2 { top: 535px; left: 1250px; }
-.text3 { top: 480px; left: 50px; }
-.text4 { top: 370px; left: 450px; }
-.text5 { top: 180px; left: 820px; }
+.text1 { top: 8%; left: 20%; }
+.text2 { top: 100%; left: 45%; }
+.text3 { top: 55%; left: 5%; }
+.text4 { top: 70%; left: 60%; }
+.text5 { top: 30%; left: 90%; }
 .text1:hover { transform: scale(1.05); }
 .text2:hover { transform: scale(1.05); }
 .text3:hover { transform: scale(1.05); }
@@ -134,6 +136,11 @@ span {
     display: inline-block;
     opacity: 0.1;
     transition: opacity 0.3s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 #bottom {
@@ -175,6 +182,7 @@ span {
         font-size: clamp(25px, 3vw, 35px);
         margin-left: 15%;
     }
+
 }
 
 .interview-header {
@@ -228,6 +236,12 @@ section {
     text-align: left;
 }
 
+@media (max-width: 950px){
+    .text1, .text2, .text3, .text4, .text5{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 768px) {
     #section {
         left: 50%;
@@ -251,6 +265,20 @@ section {
     .form-answer {
         font-size: clamp(16px, 2vw, 25px);
     }
+
+    .line{
+        letter-spacing: -9.5px ;
+    }
+
+    .text1, .text2, .text3, .text4, .text5{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 650px){
+    .text1, .text2, .text3, .text4, .text5{
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -270,6 +298,14 @@ section {
 
     .form-answer {
         font-size: clamp(14px, 2vw, 20px);
+    }
+
+    .line{
+        letter-spacing: -7.5px ;
+    }
+
+    .text1, .text2, .text3, .text4, .text5{
+        font-size: 6px;
     }
 }
 
@@ -293,10 +329,22 @@ button[type="submit"] {
     border-radius: 10px;
 }
 
+.text-content {
+    transform: scale(1);
+}
+
 @media (max-width: 768px) {
     button[type="submit"] {
         padding: 0.75rem 1.5rem;
         font-size: 18px;
+    }
+
+    .text-content {
+        transform: scale(0.95);
+    }
+
+    .david-image{
+        margin:-8em -2em;
     }
 }
 
@@ -304,6 +352,14 @@ button[type="submit"] {
     button[type="submit"] {
         padding: 0.5rem 1rem;
         font-size: 16px;
+    }
+
+    .text-content {
+        transform: scale(0.9);
+    }
+
+    .david-image{
+        margin:-5em -3em;
     }
 }
 
@@ -387,5 +443,49 @@ form {
 @media (max-width: 480px) {
     #interview, #section {
         margin-bottom: -6rem;
+    }
+}
+
+.text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: visible;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#interview {
+    position: relative;
+    margin-top: 2rem;
+    padding-right: 5%;
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        min-height: auto;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #interview {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        min-height: auto;
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #interview {
+        margin-top: 0.5rem;
     }
 }
