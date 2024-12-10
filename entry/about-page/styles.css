@@ -44,7 +44,7 @@ body {
 
 .underline {
     text-decoration: underline;
-    color: inherit;
+    color: white;
 }
 
 .underline:hover {
@@ -96,4 +96,9 @@ body {
     .text {
         margin-left: 50px;
     }
+}
+
+a {
+    color:#FFFFFF;
+    text-decoration: none !important;
 }
