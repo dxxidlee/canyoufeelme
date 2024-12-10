@@ -10,8 +10,7 @@
 
 
 html, body{
-    background-color:BLACK;
-    background: url('images/background-final.png') no-repeat center center fixed;
+    background-color:blue;
     background-size: cover; 
     overflow-y:hidden;
 }
@@ -54,7 +53,7 @@ li:hover{
     display: inline-block;
     padding: 1rem 0;
     width: 100%;
-    color: blue;
+    color: white;
     letter-spacing: -1.5px;
     margin:20px;
     font-size:25px;
