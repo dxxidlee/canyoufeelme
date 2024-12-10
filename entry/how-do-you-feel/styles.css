@@ -7,7 +7,6 @@
     text-transform: uppercase;
     font-weight: 400;
     color: white;
-    overflow-y:hidden;
 }
 
 html, body{
@@ -31,11 +30,12 @@ header h1{
     height: calc(100svh - 60px);
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
     bottom: 0rem;
     left: 4rem;
-    margin-bottom:5px;
+    margin-bottom: -30px;
+    font-size: clamp(.5rem, 5vw, 2rem);
 }
 
 .marquee-text {
