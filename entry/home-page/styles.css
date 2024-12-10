@@ -49,15 +49,16 @@ li:hover{
     opacity: .5;
 }
 
-.project{
+.project {
     display: inline-block;
     padding: 1rem 0;
     width: 100%;
     color: white;
     letter-spacing: -1.5px;
-    margin:20px;
-    font-size:25px;
-    z-index:5000;
+    margin: 20px;
+    font-size: clamp(10px, 2.5vw, 20px); 
+    z-index: 5000;
+    white-space: nowrap;
 }
 
 .image__wrapper{
